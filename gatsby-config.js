@@ -42,11 +42,14 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-contentful`,
+      resolve: 'gatsby-source-cosmicjs',
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE,
-        accessToken: process.env.CONTENTFUL_API,
-      },
+        bucketSlug: 'my-website-staging',
+        objectTypes: ['notes'],
+        apiAccess: {
+          read_key: process.env.COSMIC_READ
+        },
+      }
     }
   ],
 };

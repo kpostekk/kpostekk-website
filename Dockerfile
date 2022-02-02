@@ -1,16 +1,20 @@
 FROM node:17-alpine
 
+RUN adduser -D -s /bin/bash gatsby
+
+USER gatsby
+
 WORKDIR /app
 
 COPY package.json .
-COPY package-lock.json .
+COPY yarn.lock .
 
-RUN npm i
+RUN yarn --prod
 
 COPY ./src/ /app/src
 COPY .env /app/.env
 COPY gatsby-config.js /app/gatsby-config.js
 
-RUN npm run build
+RUN yarn build
 
-CMD ["npm", "run", "serve", "--", "--host", "0.0.0.0"]
+ENTRYPOINT yarn serve -H 0.0.0.0

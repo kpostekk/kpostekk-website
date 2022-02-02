@@ -3,6 +3,7 @@ import Root from "../components/sassy";
 import * as indexStyles from '../components/index.module.sass'
 import Vl from "../components/vl";
 import {Link} from "gatsby";
+import Card from "../components/card";
 
 function CategoryBlock({name, children}) {
   return (
@@ -62,7 +63,7 @@ function TimelineBlock({title, year, children}) {
   )
 }
 
-export default function indexPage({data}) {
+export default function IndexPage({data}) {
   return (
     <Root>
       <header style={{
@@ -70,36 +71,16 @@ export default function indexPage({data}) {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        height: '88vh'
+        minHeight: '88vh'
       }}>
         <h1 style={{textAlign: "center", alignSelf: "center"}} className={indexStyles.welcomeTitle}>K. Postek</h1>
         <p style={{margin: '4px'}} className={indexStyles.someSmartPhrase}>Small developer, big dreamer</p>
         <p style={{margin: '4px'}}>Full stack, Python, JS/TS, React, Docker, MongoDB, Swift</p>
         <hr className={indexStyles.titleHrLine}/>
         <div className={indexStyles.categoryBlockRoot}>
-          {/*<CategoryBlock name={'blog'}>
-            <p>latest posts</p>
-            {data.allCosmicjsNotes.edges.map((e) => <p><span style={{fontWeight: 'bold'}}>{e.node.title}</span> <small>{e.node.metadata.summary}</small></p>)}
-          </CategoryBlock>*/}
-          <CategoryBlock name={'projects'}>
-            <GithubRepo path={'pjatk21/pjatk-cat-guard'} title={'Gadoneko'}>
-              full stack discord bot created for managing and moderating discord servers
-            </GithubRepo>
-            <GithubRepo path={'kpostekk/AwakeThat'} title={'Awake That'}>
-              iOS app for WOL based on SwiftUI and CoreData
-            </GithubRepo>
-            <GithubRepo path={'kpostekk/ezcliy'} title={'ezcliy'}>
-              class oriented cli creation tool
-            </GithubRepo>
-          </CategoryBlock>
-          <CategoryBlock name={'prototypes'}>
-            <GithubRepo path={'kpostekk/Mini-Gakko'} title={'Mini Gakko'}>
-              iOS app replacement of horrible web app of my collage website, no longer maintained due to API's security issues
-            </GithubRepo>
-            <GithubRepo path={'kpostekk/opencore-composer'} title={'OpenCore composer'}>
-              tool for creating config.plist with predefined rules, inspired by docker-compose
-            </GithubRepo>
-          </CategoryBlock>
+          <Card>
+            <p>test</p>
+          </Card>
           <CategoryBlock name={'contact'}>
             <p style={{margin: 0, paddingTop: '12px'}}>
               <Link to={'mailto:krystian@postek.eu'}>
@@ -130,7 +111,7 @@ export default function indexPage({data}) {
         </TimelineBlock>
       </div>
       <div style={{padding: '10px'}}>
-        <p style={{textAlign: 'center', padding: 0, fontSize: '9pt', letterSpacing: '1px'}}>Powered by Gatsby and Cosmic</p>
+        <p style={{textAlign: 'center', padding: 0, fontSize: '9pt', letterSpacing: '1px'}}>Powered by Gatsby</p>
       </div>
     </Root>
   )

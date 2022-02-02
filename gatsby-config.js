@@ -8,7 +8,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
-    "gatsby-plugin-sitemap",
+    /* "gatsby-plugin-sitemap", */
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -41,7 +41,7 @@ module.exports = {
         }
       }
     },
-    {
+    /* {
       resolve: 'gatsby-source-cosmicjs',
       options: {
         bucketSlug: 'my-website-staging',
@@ -50,6 +50,6 @@ module.exports = {
           read_key: process.env.COSMIC_READ
         },
       }
-    }
+    } */
   ],
 };

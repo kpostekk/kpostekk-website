@@ -1,5 +1,8 @@
 import React from "react";
 
+/**
+ * Vertical line
+ */
 export default function Vl({ children }) {
   return (
     <div style={{

@@ -87,7 +87,7 @@ export default function IndexPage({data}) {
         <h1 style={{fontWeight: 300, marginTop: 0}}>My timeline</h1>
         <TimelineBlock title={'career begin'} year={'may, june 2021'}>
           <p>High School Graduation</p>
-          <p>Job as reverse engineer at <a href={'https://texts.com/'}>Texts</a></p>
+          <p>First job as reverse engineer</p>
         </TimelineBlock>
         <TimelineBlock title={'college'} year={'october-present 2021'}>
           <p>Student of IT at <a href={'https://www.pja.edu.pl/en/'}>PJAIT</a></p>

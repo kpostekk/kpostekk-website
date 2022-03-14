@@ -71,28 +71,15 @@ export default function IndexPage({data}) {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        minHeight: '88vh'
+        minHeight: '88vh',
+        textAlign: 'center'
       }}>
         <h1 style={{textAlign: "center", alignSelf: "center"}} className={indexStyles.welcomeTitle}>K. Postek</h1>
         <p style={{margin: '4px'}} className={indexStyles.someSmartPhrase}>Small developer, big dreamer</p>
-        <p style={{margin: '4px'}}>Full stack, Python, JS/TS, React, Docker, MongoDB, Swift</p>
+        <p style={{margin: '4px'}}
+        >Full stack, Python, JS/TS, React, Docker, MongoDB, Swift</p>
         <hr className={indexStyles.titleHrLine}/>
         <div className={indexStyles.categoryBlockRoot}>
-          <Card>
-            <p>test</p>
-          </Card>
-          <CategoryBlock name={'contact'}>
-            <p style={{margin: 0, paddingTop: '12px'}}>
-              <Link to={'mailto:krystian@postek.eu'}>
-                krystian@postek.eu
-              </Link>
-            </p>
-            <p>
-              <Link to={'https://t.me/kpostekk'}>
-                telegram @kpostekk
-              </Link>
-            </p>
-          </CategoryBlock>
         </div>
       </header>
       <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center"}}>

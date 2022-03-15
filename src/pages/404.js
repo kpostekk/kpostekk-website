@@ -1,5 +1,5 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
 import Root from "../components/sassy";
 
 /*
@@ -57,22 +57,31 @@ export default NotFoundPage
 */
 
 export default function NotFoundPage() {
-  const body = <div style={{textAlign: "center", fontStyle: 'italic'}}>
-    <h1 style={{fontWeight: 100, letterSpacing: '2px'}}>Not found</h1>
-    <p>404</p>
-    <p style={{margin: 0}}><Link to={'/'}>go back home</Link></p>
-  </div>
-
+  const body = (
+    <div style={{ textAlign: "center", fontStyle: "italic" }}>
+      <h1 style={{ fontWeight: 100, letterSpacing: "2px" }}>Not found</h1>
+      <p>404</p>
+      <p style={{ margin: 0 }}>
+        <Link to={"/"}>go back home</Link>
+      </p>
+    </div>
+  );
 
   return (
     <Root>
-      <div style={{display: "flex", flexDirection: "column",  alignItems: "center", justifyContent: "center", height: '88vh'}}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "88vh",
+        }}
+      >
         {body}
-        <hr style={{width: '50vw'}}/>
-        <div style={{transform: 'scaleY(-1)'}}>
-          {body}
-        </div>
+        <hr style={{ width: "50vw" }} />
+        <div style={{ transform: "scaleY(-1)" }}>{body}</div>
       </div>
     </Root>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import './sassy.sass'
+import "./sassy.sass";
 
-export default function Root ({ children }) {
-  return <div>{children}</div>
+export default function Root({ children }) {
+  return <div>{children}</div>;
 }

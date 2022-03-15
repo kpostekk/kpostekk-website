@@ -34,5 +34,13 @@
     "react-syntax-highlighter": "^15.4.5",
     "react-use-scroll-direction": "^0.1.0",
     "sass": "^1.46.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "prettier": "^2.5.1"
   }
 }

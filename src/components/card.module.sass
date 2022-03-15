@@ -1,0 +1,23 @@
+@import colors.sass
+
+.cardContainer
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  max-width: 60vw
+
+.card
+  padding: 12px
+  // box-shadow: 0 0 8px rgba(170, 170, 170, 0.5)
+  border: 1px solid adjust-color($bright, $alpha: -0.8)
+  border-radius: 8px
+  margin: 12px
+  flex-grow: 1
+  //flex-basis: 0
+
+  h1
+    margin: 10px 8px
+  
+  p.description
+    margin: 4px 8px

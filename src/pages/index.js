@@ -80,7 +80,7 @@ export default function IndexPage() {
               <a href="https://t.me/kpostekk">dm me</a>
             </p>
           </Card>
-          <Card title={"linked in"}>
+          <Card title={"linkedIn"}>
             <p>
               <a href="https://www.linkedin.com/in/kpostekk/">recruit me</a>
             </p>

@@ -82,7 +82,7 @@ export default function IndexPage() {
           </Card>
           <Card title={"linkedIn"}>
             <p>
-              <a href="https://www.linkedin.com/in/kpostekk/">recruit me</a>
+              <a href="https://www.linkedin.com/in/kpostekk/">hire me</a>
             </p>
           </Card>
         </div>
@@ -99,13 +99,18 @@ export default function IndexPage() {
           scroll down
         </p>
         <h1 style={{ fontWeight: 300, marginTop: 0 }}>My timeline</h1>
-        <TimelineBlock title={"career begin"} year={"may, june 2021"}>
+        <TimelineBlock title={"career begin"} year={"may/june 2021"}>
           <p>High School Graduation</p>
           <p>First job as reverse engineer</p>
         </TimelineBlock>
         <TimelineBlock title={"college"} year={"october-present 2021"}>
           <p>
             Student of IT at <a href={"https://www.pja.edu.pl/en/"}>PJAIT</a>
+          </p>
+        </TimelineBlock>
+        <TimelineBlock title={"work"} year={"may 2022"}>
+          <p>
+            First job as full-stack developer at <a href={"https://ledatel.pl/en/"}>LEDATEL</a>
           </p>
         </TimelineBlock>
         <h2

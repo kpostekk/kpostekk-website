@@ -1,4 +1,4 @@
-require('dotenv').config()
+// require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
@@ -33,14 +33,14 @@ module.exports = {
       },
       __key: "pages",
     },
-    {
-      resolve: "gatsby-plugin-mdx",
-      options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/layout.js')
-        }
-      }
-    },
+    // {
+    //   resolve: "gatsby-plugin-mdx",
+    //   options: {
+    //     defaultLayouts: {
+    //       default: require.resolve('./src/components/layout.js')
+    //     }
+    //   }
+    // },
     /* {
       resolve: 'gatsby-source-cosmicjs',
       options: {
